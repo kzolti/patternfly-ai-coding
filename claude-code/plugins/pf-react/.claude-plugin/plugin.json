@@ -1,0 +1,18 @@
+{
+  "name": "pf-react",
+  "description": "PatternFly React coding standards and test generation agents",
+  "version": "1.0.0",
+  "author": {
+    "name": "PatternFly Team",
+    "url": "https://www.patternfly.org"
+  },
+  "repository": "https://github.com/patternfly/patternfly-ai-coding",
+  "license": "MIT",
+  "mcpServers": {
+    "patternfly": {
+      "command": "npx",
+      "args": ["-y", "@patternfly/patternfly-mcp@latest"],
+      "env": {}
+    }
+  }
+}

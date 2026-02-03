@@ -14,7 +14,7 @@ The primary aim is to offer a comprehensive, AI-friendly knowledge base and star
 ## Core Components
 The core components of this repository are the README and markdown files found throughout the project. These files provide indexed documentation, guidelines, and best practices to support AI-assisted PatternFly development, regardless of which AI coding tool you use.
 
-- **Table of Contents:** See [`.pf-ai-documentation/README.md`](documentation/README.md) for a full table of contents and navigation to all rules, guides, and best practices.
+- **Table of Contents:** See [`.pf-ai-documentation/README.md`](.pf-ai-documentation/README.md) for a full table of contents and navigation to all rules, guides, and best practices.
 
 ## Using This Documentation with Cursor and AI Tools
 
@@ -51,6 +51,14 @@ To get the full benefit of these docs and rules:
 >    ```
 > 3. Save and restart your client/editor.
 > 4. For more details and setup instructions for other editors, see the official guide: https://github.com/upstash/context7#installation
+
+## Claude Code plugins
+
+For [Claude Code](https://code.claude.com) users, this repository includes plugins with agents for PatternFly development.
+
+See [`claude-code/`](claude-code/) for available plugins and installation instructions.
+
+---
 
 ## Reference Documentation
 - [PatternFly.org](https://www.patternfly.org/)
