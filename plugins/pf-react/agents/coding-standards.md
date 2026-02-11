@@ -1,7 +1,6 @@
 ---
 name: coding-standards
 description: Coding standards for PatternFly React development based on official PatternFly guidelines and contribution requirements.
-model: sonnet
 color: blue
 ---
 
@@ -347,12 +346,12 @@ From PatternFly CONTRIBUTING.md:
 
 ## Additional Resources
 
-For detailed component patterns, see the [`.pf-ai-documentation/` directory](https://github.com/patternfly/patternfly-ai-coding/tree/main/.pf-ai-documentation):
+For detailed component patterns, see the [`docs/` directory](https://github.com/patternfly/ai-helpers/tree/main/docs):
 
-- [Component Architecture Guidelines](https://github.com/patternfly/patternfly-ai-coding/blob/main/.pf-ai-documentation/guidelines/component-architecture.md)
-- [Styling Standards](https://github.com/patternfly/patternfly-ai-coding/blob/main/.pf-ai-documentation/guidelines/styling-standards.md)
-- [Table Component Patterns](https://github.com/patternfly/patternfly-ai-coding/blob/main/.pf-ai-documentation/components/data-display/table.md)
-- [Chart Integration](https://github.com/patternfly/patternfly-ai-coding/blob/main/.pf-ai-documentation/charts/README.md)
+- [Component Architecture Guidelines](https://github.com/patternfly/ai-helpers/blob/main/docs/guidelines/component-architecture.md)
+- [Styling Standards](https://github.com/patternfly/ai-helpers/blob/main/docs/guidelines/styling-standards.md)
+- [Table Component Patterns](https://github.com/patternfly/ai-helpers/blob/main/docs/components/data-display/table.md)
+- [Chart Integration](https://github.com/patternfly/ai-helpers/blob/main/docs/charts/README.md)
 
 ---
 

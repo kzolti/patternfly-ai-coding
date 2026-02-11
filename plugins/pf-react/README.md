@@ -6,10 +6,10 @@ Claude Code plugin for PatternFly React development with coding standards enforc
 
 ```bash
 # Add the PatternFly marketplace
-/plugin marketplace add patternfly/patternfly-ai-coding
+/plugin marketplace add patternfly/ai-helpers
 
 # Install the plugin
-/plugin install pf-react@patternfly-ai-coding
+/plugin install pf-react@ai-helpers
 ```
 
 ## Commands
@@ -86,7 +86,7 @@ pf-react/
 **Commands not recognized:**
 ```bash
 /plugin list                              # Verify plugin is installed
-/plugin install pf-react@patternfly-ai-coding  # Reinstall if needed
+/plugin install pf-react@ai-helpers  # Reinstall if needed
 ```
 
 **MCP server not connecting:**

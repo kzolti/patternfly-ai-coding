@@ -1,7 +1,6 @@
 ---
 name: test-generator
 description: Generate unit tests for PatternFly React components following Testing Library best practices and PatternFly testing guidelines.
-model: sonnet
 color: blue
 ---
 

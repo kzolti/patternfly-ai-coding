@@ -1,67 +1,74 @@
-# PatternFly AI Coding Support
+# PatternFly AI Helpers
 
-## Who is this for?
-This repository is for individuals and AI agents who want to prototype PatternFly applications using the latest best practices, with AI assistance (Cursor, Copilot, ChatGPT, etc.).
+AI coding helpers for [PatternFly](https://www.patternfly.org/) development. This repository provides plugins, rules, and documentation to help AI tools (Claude Code, Cursor, Copilot, etc.) generate accurate, best-practice PatternFly applications.
 
-## Quick Start (TL;DR)
-1. **Clone or copy this repo (or at least the `.pf-ai-documentation/` directory and `.cursor/rules/` files) into your project.**
-2. **Open your project in Cursor or your preferred AI coding tool.**
-3. (Optional) **Set up context7 MCP for always-up-to-date PatternFly docs.**
+## Quick Start
 
-## Goal
-The primary aim is to offer a comprehensive, AI-friendly knowledge base and starting point for prototyping PatternFly applications. By indexing relevant documentation and providing context files, this repo ensures that any AI model can deliver accurate, consistent, and best-practice guidance while you code.
+### Claude Code
 
-## Core Components
-The core components of this repository are the README and markdown files found throughout the project. These files provide indexed documentation, guidelines, and best practices to support AI-assisted PatternFly development, regardless of which AI coding tool you use.
+```bash
+# Add the marketplace
+/plugin marketplace add patternfly/ai-helpers
 
-- **Table of Contents:** See [`.pf-ai-documentation/README.md`](.pf-ai-documentation/README.md) for a full table of contents and navigation to all rules, guides, and best practices.
+# Install the PatternFly React plugin
+/plugin install pf-react@ai-helpers
+```
 
-## Using This Documentation with Cursor and AI Tools
+After installation, use the commands in any project:
 
-> **Important:**
-> Simply providing a link to this repository is not enough for Cursor (or most AI tools) to load all the context and instructions. These tools only index files that are present in your local project workspace.
+```bash
+/coding-standards    # PatternFly v6 React coding standards
+/test-generator      # Generate unit tests following Testing Library best practices
+```
 
-### Best Practice: Add Documentation Locally
-To get the full benefit of these docs and rules:
-1. **Clone or copy this repository (or at least the `.pf-ai-documentation/` directory and `.cursor/rules/` files) into your project.**
-2. **Open your project in Cursor (or your preferred AI coding tool).**
-3. **Keep your local docs up to date** by pulling changes from this repo as it evolves.
+See [plugins/pf-react/](plugins/pf-react/) for full documentation.
 
-### Why Local Files Matter
-- Cursor and similar tools only use files present in your local workspace for context and code search.
-- If the documentation and rules are not present locally, the AI will not "see" them, even if you provide a link.
+### Cursor
 
-### For Maximum Effectiveness
-- Use context7 or another MCP server to supplement your local docs with the latest upstream PatternFly documentation.
-- Encourage your team to read and follow the local documentation and rules for consistent, best-practice PatternFly development.
+Copy the `.cursor/rules/` directory into your project to enable PatternFly best-practice enforcement.
 
-## Setting Up context7 MCP for Latest Docs (Optional)
-> **How to set up context7 MCP server:**
-> 1. Ensure you have Node.js v18+ and an MCP-compatible client (e.g., Cursor, VS Code with MCP extension, Windsurf, Claude Desktop).
-> 2. Add context7 as an MCP server in your client's configuration. For example, in Cursor, add this to your `~/.cursor/mcp.json`:
->    ```json
->    {
->      "mcpServers": {
->        "context7": {
->          "command": "npx",
->          "args": ["-y", "@upstash/context7-mcp@latest"]
->        }
->      }
->    }
->    ```
-> 3. Save and restart your client/editor.
-> 4. For more details and setup instructions for other editors, see the official guide: https://github.com/upstash/context7#installation
+### Other AI Tools
 
-## Claude Code plugins
+Copy the `docs/` directory into your project workspace. AI tools index local files for context, so having the documentation present locally ensures accurate PatternFly guidance.
 
-For [Claude Code](https://code.claude.com) users, this repository includes plugins with agents for PatternFly development.
+## Repository Structure
 
-See [`claude-code/`](claude-code/) for available plugins and installation instructions.
+```
+ai-helpers/
+├── plugins/              # Claude Code plugins
+│   └── pf-react/         # PatternFly React coding standards & test generation
+├── docs/                 # AI-friendly PatternFly documentation
+│   ├── guidelines/       # Coding standards, styling, accessibility
+│   ├── components/       # Component-specific patterns
+│   ├── charts/           # Chart guidelines
+│   └── chatbot/          # Chatbot patterns
+├── .cursor/rules/        # Cursor IDE rules
+├── .claude-plugin/       # Plugin marketplace configuration
+└── .claude/              # Claude Code settings
+```
 
----
+## Documentation
 
-## Reference Documentation
+The `docs/` directory contains comprehensive, AI-friendly PatternFly documentation. See [docs/README.md](docs/README.md) for the full table of contents.
+
+### Using Documentation with AI Tools
+
+AI tools only index files present in your local workspace. To get the full benefit:
+
+1. Clone or copy this repository (or at least the `docs/` directory) into your project
+2. Open your project in your AI coding tool
+3. The tool will automatically reference the documentation for PatternFly guidance
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding plugins, commands, documentation, and Cursor rules.
+
+## References
+
 - [PatternFly.org](https://www.patternfly.org/)
-- [PatternFly React GitHub Repository](https://github.com/patternfly/patternfly-react)
+- [PatternFly React GitHub](https://github.com/patternfly/patternfly-react)
+- [PatternFly MCP Server](https://github.com/patternfly/patternfly-mcp)
 
-> For all rules and examples, consult both PatternFly.org and the official GitHub repository. When using AI tools, leverage context7 to fetch the latest docs from these sources.
+## License
+
+[MIT](LICENSE)
