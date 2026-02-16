@@ -1,0 +1,13 @@
+{
+  "name": "ai-helpers",
+  "owner": {
+    "name": "PatternFly Team"
+  },
+  "plugins": [
+    {
+      "name": "pf-react",
+      "source": "./plugins/pf-react",
+      "description": "PatternFly React coding standards and test generation agents"
+    }
+  ]
+}

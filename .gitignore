@@ -1,8 +1,17 @@
 # VS Code
 /.vscode/
 
-# Git directory
-.git/
-
 # macOS
-.DS_Store 
+.DS_Store
+
+# Node
+node_modules/
+
+# Generated output
+prototypes/
+
+# Temporary files
+tmp/
+
+# Local Claude Code settings (user-specific)
+.claude/settings.local.json
