@@ -108,7 +108,6 @@ const createMessage = (content, role) => ({
 ```jsx
 // ✅ Required integration pattern
 <PageSection hasBodyWrapper>
-  <div style={{ height: 'var(--pf-t--global--spacer--4xl)' }}>
     <Chatbot>
       {/* Chatbot content */}
     </Chatbot>
