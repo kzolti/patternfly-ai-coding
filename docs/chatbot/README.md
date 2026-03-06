@@ -111,7 +111,6 @@ const createMessage = (content, role) => ({
     <Chatbot>
       {/* Chatbot content */}
     </Chatbot>
-  </div>
 </PageSection>
 ```
 

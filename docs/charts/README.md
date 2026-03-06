@@ -187,7 +187,6 @@ import { Card, CardTitle, CardBody, PageSection } from '@patternfly/react-core';
     <CardTitle>Chart Title</CardTitle>
     <CardBody>
         <ChartDonut data={data} />
-      </div>
     </CardBody>
   </Card>
 </PageSection>
